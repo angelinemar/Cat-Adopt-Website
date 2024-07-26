@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flexbox;
 }
 
 @font-face {
@@ -10,10 +11,13 @@
 }
 
 html, body {
-    background: linear-gradient(180deg, #1b2248 0%, #d7d5e9 100%);
+    background: linear-gradient(180deg, #1b2248 0%, #d7d5e9 100%), url('source/stars.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100%;
     width: 100%;
-    place-items: center;
+    display: flex;
 }
 
 li {
@@ -38,7 +42,7 @@ li {
     position: absolute;
     margin-top: 10.5em;
     font-size: xx-large;
-    margin-left: 22em;
+    margin-left: 21.3em;
     z-index: 2;
 }
 
@@ -69,7 +73,6 @@ li {
     color: white;
     position: absolute;
     font-size: xx-large;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     top: 250px;
     left: 200px;
 }
@@ -86,10 +89,10 @@ li {
 }
 
 .outer {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10.5em);
     filter: drop-shadow(0 0 0.2rem rgb(255, 238, 242));
     width: 600px;
-    height: 420px;
+    height: 460px;
     margin-left: 5em;
     border-radius: 20px 20px 20px 20px;
     border-style: solid;
@@ -137,4 +140,107 @@ li {
     left: 530px;
     top: 480px;
     outline-color: aliceblue;
+}
+
+#remember_me {
+    position: absolute;
+    margin-left: 28em;
+    width: 1.5em;
+    margin-top: 29em;
+    font-size: larger;
+    height: 1.1em; 
+}
+
+#text_remember_me {
+    position: absolute;
+    font-size: medium;
+    font-family: cursive;
+    color: aliceblue;
+    margin-top: 34.8em;
+    margin-left: 35.5em;
+}
+
+#forget_password {
+    position: absolute;
+    font-family: cursive;
+    color: aliceblue;
+    margin-top: 34.6em;
+    margin-left: 55em;
+}
+
+#button_submit {
+    position: absolute;
+    border-radius: 2em;
+    border-color: antiquewhite;
+    background-color: rgba(168, 209, 147, 1);
+    border-radius: 1em;
+    width:500px;
+    height: 60px;
+    margin-left: 22em;
+    margin-top: 24.9em;
+    font-size: 1.5em;
+    color:rgb(94, 94, 151);
+    font-family: theSunday;
+    text-shadow: -1px 1px 0 antiquewhite,
+                1px 1px 0 antiquewhite,
+                1px -1px 0 antiquewhite,
+                -1px -1px 0 antiquewhite;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#text_dont_have_account {
+    position:absolute;
+    font-size: large;
+    color: aliceblue;
+    margin-top: 37.5em;
+    margin-left: 37.5em;
+}
+
+#sign_up {
+    color: aliceblue;
+}
+
+#border_line {
+    border-style: solid;
+    border-color: rgb(250, 243, 234);
+    filter: drop-shadow(0 0 0.2rem rgb(255, 238, 242));
+    position: absolute;
+    width: 600px;
+    top: 710px;
+    left: 480px;
+}
+
+@media (max-width: 768px) {
+    #title1 {
+        font-size: 1.5em;
+    }
+    .logo {
+        width: 25%;
+    }
+    .navbar {
+        font-size: 0.9em;
+    }
+    .outer {
+        padding: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #title1 {
+        font-size: 1.2em;
+    }
+    .logo {
+        width: 30%;
+    }
+    .navbar {
+        font-size: 0.8em;
+    }
+    .outer {
+        padding: 0.5em;
+    }
+    #username_input, #password_input {
+        width: 80%;
+        height: 2.5em;
+    }
 }

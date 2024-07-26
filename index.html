@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pawrtner</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <label id="title1">Get Started</label>
     <img src="source/logo.gif" class="logo" alt="logo cat">
+    <img src="source/bg_stars.png" class="bg_stars" >
     <div class="logo"></div>
 
     <img src="source/padlock.png" class="password" alt="pad lock">
@@ -20,6 +22,16 @@
     <input id="username_input" placeholder=" example@gmail.com" >
     <input id="password_input" placeholder="••••••••••••••••••••••"> 
 
+    <input type="checkbox" id="remember_me">
+    <label id="text_remember_me">Remember Me</label>
+    <a href="#reset_pw" id="forget_password">Forget Password?</a>
+    
+    <button id="button_submit" type="button">Log In</button>
+    
+    <label id="text_dont_have_account">Don't have account?<a href="#sign_up"
+        id="sign_up"> Sign Up</a> </label>
+
+    <hr id="border_line">
     <div class="basic">
         <div class="blur"></div>
     </div>
@@ -30,6 +42,6 @@
             <li>adopt your cat now </li>
         </ul>
     </div>
-
+    <script src="index.js"></script>
 </body>
 </html>
