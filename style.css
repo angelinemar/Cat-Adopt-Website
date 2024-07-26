@@ -2,19 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    display: flexbox;
+
 }
 
 @font-face {
-    font-family: theSunday;
-    src: url(source/thesunday.otf);
+    font-family: 'TheSunday';
+    src: url('source/thesunday.otf') format('opentype');
 }
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('source/spartan.otf') format('opentype');
+}
+
 
 html, body {
     background: linear-gradient(180deg, #1b2248 0%, #d7d5e9 100%), url('source/stars.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 100%;
     width: 100%;
     display: flex;
@@ -46,6 +49,59 @@ li {
     z-index: 2;
 }
 
+.status_title {
+    position: absolute;
+    margin: 0;
+    top: 0.9em;
+    left: 3em;
+    font-size: 5em;
+    font-family: spartan;
+    color: aliceblue;
+    text-shadow: -2px 1px 0 rgba(134, 154, 255, 1),
+            2px 1px 0 rgba(134, 154, 255, 1),
+            2px -1px 0 rgba(134, 154, 255, 1),
+            -2px -1px 0 rgba(134, 154, 255, 1);
+    letter-spacing: 3px;
+}
+
+#status_day_lable {
+    top: 0.2em;
+}
+
+#status_day_lable_content {
+    top: 1.2em;
+}
+
+#status_day_username {
+    top: 2.2em;
+}
+
+#box_search_cat {
+    border-color: antiquewhite;
+    text-align: left;
+    font-size: medium;
+    font-family: cursive;
+    font-style: bold;
+    position: absolute;
+    background-color: rgb(221, 221, 221);
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    z-index: 2;
+    margin-top: 18.5em;
+    margin-left: 15em;
+    outline-color: aliceblue;
+}
+
+.search_btn_icon {
+    position: absolute;
+    margin: 0;
+    width: 3em;
+    z-index: 2;
+    height: 3em;
+    top: 18.7em;
+    left: 34.5em;
+}
 .password {
     position: absolute;
     margin-left: 34.3em;
@@ -61,6 +117,43 @@ li {
     margin-top: 3em; 
 }
 
+.logo_small {
+    margin: 0;
+    position: absolute;
+    width: 5em;
+    margin-left: 2.6em;
+    margin-top: 1.6em;
+    z-index: 2;
+}
+
+#logo_border {
+    position: absolute;
+    border-radius: 100em;
+    width: 100px;
+    height: 100px;
+    top: 1em;
+    left: 2em;
+    backdrop-filter: blur(10.5em);
+    filter: drop-shadow(0 0 0.2 rem rgb(255, 238, 242));
+    border-color: rgb(250, 243, 234);
+    border-style: solid;
+    
+}
+
+#logo_bg {
+    position: absolute;
+    width: 175px;
+    height: 140px;
+    backdrop-filter: blur(10.5em);
+    filter: drop-shadow(0 0 0.2rem rgb(255, 238, 242));
+    top: 0px;
+    left:0px;
+    border-radius: 0em 0em 2em;
+    border-color: aliceblue;
+    border-style: solid;
+
+}
+
 .userlogo {
     margin: 0em;
     position: absolute;
@@ -70,6 +163,7 @@ li {
 }
 
 #sample_text {
+    position: absolute;
     color: white;
     position: absolute;
     font-size: xx-large;
@@ -77,6 +171,184 @@ li {
     left: 200px;
 }
 
+#chart_bg {
+    position: absolute;
+    width: 175px;
+    height: 78.49%;
+    backdrop-filter: blur(10.5em);
+    filter: drop-shadow(0 0 0.2rem rgb(255, 238, 242));
+    border-radius: 0em 2em 2em 0em;
+    border-style: solid;
+    border-color: aliceblue;
+    top:10em;
+    left: 0px;
+}
+
+#top_txt {
+    font-family: theSunday;
+    color: rgba(94, 60, 97, 1);
+    text-shadow: -1px 1px 0 rgb(237, 237, 237),
+            1px 1px 0 rgb(237, 237, 237),
+            1px -1px 0 rgb(237, 237, 237),
+            -1px -1px 0 rgb(237, 237, 237);
+    font-weight: bolder;
+    font-size: 1.3em;
+    position: absolute;
+    margin-top: 8.8em;
+    margin-left: 0.8em;
+}
+
+.progress_bar {
+    position: absolute;
+    width: 9em;
+    height: 0.7em;
+    background-color: aliceblue;
+    top:16em;
+    border-radius: 2em;
+    left: 0.9em;
+}
+
+.name_lable {
+    position: absolute;
+    z-index: 2;
+    font-family: theSunday;
+    color: aliceblue;
+    letter-spacing: 2px;
+    margin-left: 1em;
+    display: flexbox;
+}
+
+#PB_1 {
+    position: absolute;    
+    top: 15em;
+}
+
+#PB_2 {
+    top: 18em;
+}
+
+#PB_3 {
+    top: 21em;
+}
+
+#PB_4 {
+    top: 24em;
+}
+
+#PB_5 {
+    top: 27em;
+}
+
+#PB_6 {
+    top: 30em;
+}
+
+#PB_7 {
+    top:33em;
+}
+
+#PB_8 {
+    top: 36em;
+}
+
+#PB_9 {
+    top: 39em;
+}
+
+#PB_10 {
+    top:42em;
+}
+
+.progress_bar_fill {
+    position: absolute;
+    width: 5em;
+    top: 0em;
+    left: 0.94em;
+    height: 0.6em;
+    background: linear-gradient(90deg,#4e5996 0%, #e9d5e3 100%);
+    border-radius: 2em;
+    z-index: 2;
+}
+
+#PBF_1 {
+    top: 15.04em;
+}
+
+#PBF_2 {
+    top: 18.04em;
+}
+
+#PBF_3 {
+    top: 21.04em;
+}
+
+#PBF_4 {
+    top: 24.04em;
+}
+
+#PBF_5 {
+    top: 27.04em;
+}
+
+#PBF_6 {
+    top: 30.04em;
+}
+
+#PBF_7 {
+    top: 33.04em;
+}
+
+#PBF_8 {
+    top: 36.04em;
+}
+
+#PBF_9 {
+    top: 39.04em;
+}
+
+#PBF_10 {
+    top: 42.04em;
+}
+
+#top_1 {
+    margin-top: 13.5em;
+}
+
+#top_2 {
+    margin-top: 16.5em;
+}
+
+#top_3 {
+    margin-top: 19.5em;
+}
+
+#top_4 {
+    margin-top: 22.5em;
+}
+
+#top_5 {
+    margin-top: 25.5em;
+}
+
+#top_6{
+    margin-top: 28.5em;
+}
+
+#top_7 {
+    margin-top: 31.5em;
+}
+
+#top_8 {
+    margin-top: 34.5em;
+}
+
+#top_9 {
+    margin-top: 37.5em;
+}
+
+#top_10 {
+    margin-top: 40.5em;
+}
 .navbar {
     overflow: hidden;
     background: linear-gradient(to right,rgb(168, 211, 225),  rgb(170, 234, 255),rgb(247, 255, 247));
@@ -106,7 +378,6 @@ li {
     top: 300px;
     left: 400px;
 }
-
 
 #username_input{
     border-color: antiquewhite;
@@ -189,15 +460,16 @@ li {
     font-size: 1.5em;
     color:rgb(94, 94, 151);
     font-family: theSunday;
-    text-shadow: -1px 1px 0 antiquewhite,
-                1px 1px 0 antiquewhite,
-                1px -1px 0 antiquewhite,
-                -1px -1px 0 antiquewhite;
+    text-shadow: -2px 2px 0 antiquewhite,
+                2px 2px 0 antiquewhite,
+                2px -2px 0 antiquewhite,
+                -2px -2px 0 antiquewhite;
     font-weight: bolder;
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
 }
+
 #button_submit:hover {
     background-color: rgb(120, 163, 116);
     transform: scale(1.02);
@@ -211,6 +483,45 @@ li {
     margin-left: 37.5em;
 }
 
+.random_content_box {
+    position: absolute;
+    border-color: antiquewhite;
+    border-style: ridge;
+    border-top-width: 0.2em;
+    border-left-width: 0.2em;
+    border-right-width: 0.2em;
+    width: 7em;
+    height: 41%;
+    z-index: 2;
+    top: 34em;
+    background-color: rgba(246, 250, 255, 1);
+    border-radius: 2em 2em 0em 0em;
+    
+}
+
+#RD_1 {
+    left:16em;
+}
+
+#RD_2 {
+    left: 24em;
+}
+
+#RD_3 {
+    left: 32em;
+}
+
+#RD_4 {
+    left: 40em;
+}
+
+#RD_5 {
+    left: 48em;
+}
+
+#RD_6 {
+    left: 56em;
+}
 #sign_up {
     color: aliceblue;
 }
@@ -223,38 +534,4 @@ li {
     width: 600px;
     top: 710px;
     left: 480px;
-}
-
-@media (max-width: 768px) {
-    #title1 {
-        font-size: 1.5em;
-    }
-    .logo {
-        width: 25%;
-    }
-    .navbar {
-        font-size: 0.9em;
-    }
-    .outer {
-        padding: 1em;
-    }
-}
-
-@media (max-width: 480px) {
-    #title1 {
-        font-size: 1.2em;
-    }
-    .logo {
-        width: 30%;
-    }
-    .navbar {
-        font-size: 0.8em;
-    }
-    .outer {
-        padding: 0.5em;
-    }
-    #username_input, #password_input {
-        width: 80%;
-        height: 2.5em;
-    }
 }
