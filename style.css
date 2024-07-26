@@ -144,11 +144,19 @@ li {
 
 #remember_me {
     position: absolute;
+    border-color: antiquewhite;
+    border-radius: 2em;
     margin-left: 28em;
     width: 1.5em;
     margin-top: 29em;
     font-size: larger;
     height: 1.1em; 
+    
+}
+
+#remember_me:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform:scale(1.03);
 }
 
 #text_remember_me {
@@ -187,8 +195,14 @@ li {
                 -1px -1px 0 antiquewhite;
     font-weight: bolder;
     text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
-
+#button_submit:hover {
+    background-color: rgb(120, 163, 116);
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
 #text_dont_have_account {
     position:absolute;
     font-size: large;
