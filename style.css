@@ -16,8 +16,15 @@
 }
 
 
-html, body {
+.page_login{
     background: linear-gradient(180deg, #1b2248 0%, #d7d5e9 100%), url('source/stars.png');
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.home_page {
+    background: linear-gradient(180deg, rgba(27, 34, 72, 1) 0%, rgba(64, 80, 168, 1) 100%), url('source/stars.png');
     height: 100%;
     width: 100%;
     display: flex;
@@ -33,14 +40,53 @@ li {
     font-size: medium;
 }
 
+#profile_picture {
+    position: absolute;
+    width: 13em;
+    height: 13em;
+    border-style: solid;
+    color: transparent;
+    top: 4em;
+    left: 65em;
+    background: linear-gradient(180deg, #a7b4ff 0%, #d7d5e9 100%);
+    border-radius: 100em;
+    z-index: 2;
+}
+
+.navbar_thin {
+    margin-left: 11em;
+    top: 4em;
+}
+
+.telinga_kucing {
+    margin-left: 9.5em;
+    top: 5em;
+    border-radius: 2em 10em 2em 10em;
+    border-style: solid;
+    border-width: 0.5em;
+    border-color: #a7b4ff;
+}
+#test_percobaan_1 {
+    position: absolute;
+    width: 7em;
+    height: 5em;
+    left: 55em;
+    background-color: aliceblue;
+}
+
+#test_percobaan_2 {
+    position: absolute;
+    width: 7em;
+    height: 5em;
+    left: 62em;
+    background-color: aliceblue;
+    border-radius: 10em 2em 10em 2em;
+}
+
 #title1 {
     color:rgb(57, 57, 114);
     font-family: theSunday;
-    text-shadow: -1px 1px 0 antiquewhite,
-                1px 1px 0 antiquewhite,
-                1px -1px 0 antiquewhite,
-                -1px -1px 0 antiquewhite;
-    font-weight: bolder;
+    -webkit-text-stroke: 1px antiquewhite;
     text-align: center;
     position: absolute;
     margin-top: 10.5em;
@@ -55,24 +101,32 @@ li {
     top: 0.9em;
     left: 3em;
     font-size: 5em;
-    font-family: spartan;
-    color: aliceblue;
-    text-shadow: -2px 1px 0 rgba(134, 154, 255, 1),
-            2px 1px 0 rgba(134, 154, 255, 1),
-            2px -1px 0 rgba(134, 154, 255, 1),
-            -2px -1px 0 rgba(134, 154, 255, 1);
+    font-family: 'spartan', sans-serif;
     letter-spacing: 3px;
 }
 
+
 #status_day_lable {
+    background: linear-gradient(135deg, rgba(236, 255, 235, 1) 0%, rgba(255, 252, 174, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 4px rgba(134, 154, 255, 1);
     top: 0.2em;
 }
 
 #status_day_lable_content {
+    background: linear-gradient(90deg, rgb(227, 255, 225) 0%, rgb(245, 242, 153) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 4px rgba(134, 154, 255, 1);
     top: 1.2em;
 }
 
 #status_day_username {
+    background: linear-gradient(135deg, rgba(243, 240, 247, 1) 0%, rgb(247, 206, 249) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 4px rgba(134, 154, 255, 1);
     top: 2.2em;
 }
 
@@ -95,12 +149,11 @@ li {
 
 .search_btn_icon {
     position: absolute;
-    margin: 0;
     width: 3em;
-    z-index: 2;
+    z-index: 3;
     height: 3em;
     top: 18.7em;
-    left: 34.5em;
+    left: 30.5em;
 }
 .password {
     position: absolute;
@@ -534,4 +587,153 @@ li {
     width: 600px;
     top: 710px;
     left: 480px;
+}
+
+.circle_stats {
+    position: absolute;
+    border-style: solid;
+    width: 5em;
+    height: 5em;
+    border-radius: 100em;
+    z-index: 2;
+    border-color:aliceblue;
+}
+
+#CS_1 {
+    background: linear-gradient(180deg, rgba(184, 211, 254, 1) 0%, rgba(250, 241, 252, 1) 100%);
+    top: 3em;
+    left: 40em;
+}
+
+#CS_2 {
+    background: linear-gradient(180deg, rgba(246, 239, 252, 1) 0%, rgba(254, 255, 223, 1) 100%);
+    top: 7.5em;
+    left: 45em;
+}
+
+#CS_3 {
+    background: linear-gradient(180deg, rgba(253, 253, 226, 1) 0%, rgba(195, 248, 197, 1) 100%);
+    top: 14.4em;
+    left: 45em;
+}
+
+.lbl_title_class_CS {
+    font-family: theSunday;
+    position: absolute;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgba(94, 60, 97, 1);
+}
+
+#lbl_title_CS_1 {
+    top: 0.5em;
+    left: 0.9em;
+}
+
+#lbl_title_CS_2 {
+    top: 0.7em;
+    left: 0.5em;
+}
+
+#lbl_title_CS_3 {
+    top: 0.7em;
+    left: 0.6em;
+}
+
+.lbl_value_CS {
+    position: absolute;
+    font-style: bold;
+    color: #79585f;
+    font-size: 2em;
+    font-family: theSunday;
+    text-align: center;
+    top: 1em;
+    left: 0.8em;
+}
+
+#bub_bg_1 {
+    position: absolute;
+    margin: 0em;
+    z-index: 2;
+    top: 3em;
+    left: 46em;
+}
+
+#bub_bg_2 {
+    position: absolute;
+    margin: 0em;
+    z-index: 2;
+    top: 3em;
+    left: 50em;
+}
+
+#bub_bg_3 {
+    position: absolute;
+    margin: 0em;
+    z-index: 2;
+    top: 9em;
+    left: 51.5em;
+}
+
+#bub_bg_4 {
+    position: absolute;
+    margin: 0em;
+    z-index: 2;
+    top: 13em;
+    left: 43em;
+}
+
+.bub_bg_small {
+    position: absolute;
+    z-index: 2;
+}
+
+#bub_small_bg_1 {
+    top: 4em;
+    left: 48em;
+}
+
+#bub_small_bg_2 {
+    top: 4em;
+    left: 52.5em;
+}
+
+#bub_small_bg_3 {
+    top: 6em;
+    left: 54em;
+}
+
+#bub_small_bg_4 {
+    top: 8em;
+    left: 53em;
+}
+
+#bub_small_bg_5 {
+    top: 12em;
+    left: 44em;
+}
+
+#bub_small_bg_6 {
+    top: 14.8em;
+    left: 44em;
+}
+
+#bub_small_bg_7 {
+    top: 17em;
+    left: 50.5em;
+}
+
+#bub_small_bg_8 {
+    top: 18.5em;
+    left: 52em;
+}
+
+#bub_small_bg_9 {
+    top: 19em;
+    left: 54em;
+}
+
+#bub_small_bg_10 {
+    top: 9em;
+    left: 80em;
 }
