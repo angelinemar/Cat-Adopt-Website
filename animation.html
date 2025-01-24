@@ -9,6 +9,7 @@
 </head>
 
 <body class="animation">
+    <form method="post" action="connect.php"
     <!-- /*loading page intro*/ -->
     <label id="anim_text1">the cats await</label>
     <label id="anim_text2">their new journey</label>
@@ -22,8 +23,10 @@
         <label id="title1">Get Started</label>
         <span id="box"></span>
         
-        <input type="username" class="username_input" placeholder="example@gmail.com" >
-        <input type="password" class="password_input" placeholder="•••••••••••••••">
+        <input type="username" 
+            name="username" class="username_input" placeholder="example@gmail.com" >
+        <input type="password"
+            name="password" class="password_input" placeholder="•••••••••••••••">
         <img src="source/user.png" id="userlogo" alt="user logo">
         <img src="source/padlock.png" id="passwordlogo" alt="pad lock">
         <input type="checkbox" id="remember_me">
